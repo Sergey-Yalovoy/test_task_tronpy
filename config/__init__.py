@@ -1,3 +1,4 @@
+from pydantic import ConfigDict
 from pydantic_settings import BaseSettings
 
 
@@ -6,9 +7,7 @@ class Settings(BaseSettings):
     TRON_NETWORK: str
     TRON_TOKEN: str | None
     TRON_PROVIDER: str | None
-
-    class Config:
-        env_file = ".env"
+    model_config = ConfigDict(env_file = ".env") # noqa
 
 settings = Settings() # noqa
 
