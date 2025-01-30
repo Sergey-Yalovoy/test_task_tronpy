@@ -98,7 +98,7 @@ GET /wallet/get_all
   "items": [
     {
       "id": 1,
-      "address": "TLRwhvNxnDjCDFo6YS6Vkbn5uo59CQM4Lf",
+      "address": "TLRwhvNxnDjCDFo6YS6Vkbn5uo59CQM4Le",
       "balance": 100.5,
       "free_net_used": 100,
       "free_net_limit": 5000,
@@ -114,7 +114,7 @@ GET /wallet/get_all
 }
 ```
 
-### Создать или обновить кошелек
+### Получить информацию о кошельке и сохранить запрос в БД
 
 **Запрос:**
 
@@ -126,7 +126,7 @@ POST /wallet/
 
 ```json
 {
-  "address": "TLRwhvNxnDjCDFo6YS6Vkbn5uo59CQM4Lf"
+  "address": "TLRwhvNxnDjCDFo6YS6Vkbn5uo59CQM4Le"
 }
 ```
 
@@ -135,7 +135,7 @@ POST /wallet/
 ```json
 {
   "id": 1,
-  "address": "TLRwhvNxnDjCDFo6YS6Vkbn5uo59CQM4Lf",
+  "address": "TLRwhvNxnDjCDFo6YS6Vkbn5uo59CQM4Le",
   "balance": 100.5,
   "free_net_used": 100,
   "free_net_limit": 5000,
